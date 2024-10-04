@@ -7,9 +7,8 @@ namespace Tyuiu.BozhukovVP.Sprint1.Task3.V8.Lib
         public double IncomeAmount(double startAmount, double percent, double timeDays)
         {
             double doh = ((percent / 100 * startAmount) / 365) * timeDays;
-            double x = startAmount + doh;
-            double xot = Math.Round(x, 3);
-            return xot;
+            double dohod = Math.Round(doh, 3);
+            return dohod;
         }
     }
 }

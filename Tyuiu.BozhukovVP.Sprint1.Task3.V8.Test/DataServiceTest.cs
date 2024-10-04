@@ -12,7 +12,7 @@ namespace Tyuiu.BozhukovVP.Sprint1.Task3.V8.Test
             double percent = 20;
             double timeDays = 30;
             var res = ds.IncomeAmount(startAmount, percent, timeDays);
-            Assert.AreEqual(2541.096, res);
+            Assert.AreEqual(41.096, res);
 
         }
     }
