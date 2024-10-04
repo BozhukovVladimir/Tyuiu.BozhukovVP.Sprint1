@@ -30,9 +30,11 @@ namespace Tyuiu.BozhukovVP.Sprint1.Task3.V8
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Сумма по окончанию срока вклада: " + ds.IncomeAmount(startAmount, percent, timeDays));
-            double x = ds.IncomeAmount(startAmount, percent, timeDays) - startAmount;
-            Console.WriteLine("Доход: " + x);
+            double doh = ds.IncomeAmount(startAmount, percent, timeDays);
+            double x = doh - startAmount;
+            double xot = Math.Round(x, 3);
+            Console.WriteLine("Сумма по окончанию срока вклада: " + xot);
+            Console.WriteLine("Доход: " + doh);
             Console.ReadKey();
         }
     }
